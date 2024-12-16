@@ -1,0 +1,42 @@
+{
+    "name": "projectinfiniteme/laravel-core-kit",
+    "description": "Main Core Code for starter project modules and extensions",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Yure Nery",
+            "email": "yurenery@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.0",
+        "laravel/framework": "^10.0",
+        "projectinfiniteme/laravel-core-auth": "^2.1.8",
+        "projectinfiniteme/postman-documentation": "^1.2.12"
+    },
+    "autoload": {
+        "psr-4": {
+            "AttractCores\\LaravelCoreKit\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Amondar\\Sextant\\SextantServiceProvider",
+                "AttractCores\\PostmanDocumentation\\PostmanServiceProvider",
+                "AttractCores\\LaravelCoreClasses\\CoreControllerServiceProvider",
+                "AttractCores\\LaravelCoreVerificationBroker\\VerificationBrokerServiceProvider",
+                "AttractCores\\LaravelCoreAuth\\CoreAuthServiceProvider",
+                "AttractCores\\LaravelCoreAuth\\InitializeCoreRightsServiceProvider",
+                "AttractCores\\LaravelCoreAuth\\CustomPassportServiceProvider",
+                "AttractCores\\LaravelCoreKit\\KitServiceProvider"
+            ]
+        }
+    }
+}
