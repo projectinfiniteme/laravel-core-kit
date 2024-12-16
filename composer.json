@@ -12,8 +12,8 @@
     "require": {
         "php": ">=8.0",
         "laravel/framework": "^10.0",
-        "projectinfiniteme/laravel-core-auth": "^2.1.8",
-        "projectinfiniteme/postman-documentation": "^1.2.12"
+        "projectinfiniteme/laravel-core-auth": "dev-main",
+        "projectinfiniteme/postman-documentation": "dev-main"
     },
     "autoload": {
         "psr-4": {
